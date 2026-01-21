@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dataset Analysis Report</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Task 1: Understanding Dataset & Data Types</h1>
+        <p>Titanic & Students Performance Dataset Analysis</p>
+    </header>
+
+    <section class="dataset">
+        <h2>1. Dataset Overview</h2>
+        <p><strong>Titanic Dataset:</strong> Passenger details used to predict survival.</p>
+        <p><strong>Students Performance Dataset:</strong> Academic performance based on demographic and educational factors.</p>
+    </section>
+
+    <section class="dataset">
+        <h2>2. Dataset Size</h2>
+        <table>
+            <tr>
+                <th>Dataset</th>
+                <th>Rows</th>
+                <th>Columns</th>
+            </tr>
+            <tr>
+                <td>Titanic</td>
+                <td>891</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Students Performance</td>
+                <td>1000</td>
+                <td>8</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="dataset">
+        <h2>3. Feature Classification</h2>
+
+        <h3>Titanic Dataset</h3>
+        <ul>
+            <li><strong>Numerical:</strong> Age, Fare, SibSp, Parch</li>
+            <li><strong>Categorical:</strong> Sex, Embarked, Cabin</li>
+            <li><strong>Ordinal:</strong> Pclass</li>
+            <li><strong>Binary:</strong> Survived</li>
+        </ul>
+
+        <h3>Students Performance Dataset</h3>
+        <ul>
+            <li><strong>Numerical:</strong> Math Score, Reading Score, Writing Score</li>
+            <li><strong>Categorical:</strong> Gender, Lunch, Test Preparation</li>
+            <li><strong>Ordinal:</strong> Parental Level of Education</li>
+            <li><strong>Binary:</strong> Test Preparation Course</li>
+        </ul>
+    </section>
+
+    <section class="dataset">
+        <h2>4. Target Variable Identification</h2>
+        <p><strong>Titanic:</strong> <span class="highlight">Survived</span></p>
+        <p><strong>Students Performance:</strong> <span class="highlight">Math Score</span></p>
+    </section>
+
+    <section class="dataset">
+        <h2>5. Data Quality Observations</h2>
+        <ul id="observations">
+            <!-- JS will populate -->
+        </ul>
+    </section>
+
+    <section class="dataset">
+        <h2>6. Machine Learning Suitability</h2>
+        <p id="mlResult"></p>
+    </section>
+
+    <footer>
+        <p>Internship Task – Data Understanding & Analysis</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
