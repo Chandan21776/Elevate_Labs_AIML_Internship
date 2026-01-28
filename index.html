@@ -2,22 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Data Cleaning & Missing Value Handling</title>
+  <title>Exploratory Data Analysis (EDA)</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-<h2>Task 2: Data Cleaning & Missing Value Handling</h2>
+<h1>Task 3: Exploratory Data Analysis (EDA)</h1>
 
-<input type="file" id="upload" accept=".csv">
-<button onclick="processData()">Clean Dataset</button>
-<button onclick="downloadCSV()">Download Cleaned Data</button>
+<input type="file" id="fileInput" accept=".csv">
 
-<h3>Missing Values Summary</h3>
-<canvas id="chart"></canvas>
+<h2>Numerical Feature Distribution (Histogram)</h2>
+<canvas id="histogram"></canvas>
+<p id="histInsight"></p>
 
-<h3>Dataset Comparison</h3>
-<p id="comparison"></p>
+<h2>Categorical Feature Analysis (Count Plot)</h2>
+<canvas id="countPlot"></canvas>
+<p id="countInsight"></p>
+
+<h2>Outlier Detection (Box Plot)</h2>
+<canvas id="boxPlot"></canvas>
+<p id="boxInsight"></p>
+
+<h2>Correlation Heatmap</h2>
+<canvas id="heatmap"></canvas>
+<p id="heatInsight"></p>
+
+<h2>EDA Summary</h2>
+<ul id="summary"></ul>
 
 <script src="./script.js"></script>
 </body>
